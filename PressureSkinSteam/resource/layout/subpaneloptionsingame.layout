@@ -1,0 +1,150 @@
+"resource/layout/subpaneloptionsingame.layout" {
+	styles {
+		Page {
+			render_bg {
+				0="fill(x0+18,y0+305,x1-43,y0+306, black65)"
+				1="fill(x0+18,y0+306,x1-43,y0+307, grey50)"
+			}
+		}
+	}
+
+	layout {
+		place {
+			controls=DescriptionLabel
+			x=18
+			y=21
+			width=max
+			margin-right=43
+			dir=down
+			spacing=8
+		}
+
+		place {
+			controls=EnableOverlayCheck
+			start=DescriptionLabel
+			y=16
+			width=max
+			dir=down
+		}
+
+		place {
+			controls=HotKeySelectorLabel
+			start=EnableOverlayCheck
+			y=10
+			dir=down
+		}
+
+		place {
+			controls=HotKeySelector
+			start=HotKeySelectorLabel
+			y=4
+			width=200
+			height=24
+			dir=down
+		}
+
+		place {
+			control="Divider1"
+			start=HotKeySelector
+			y=16
+			width=max
+			margin-right=43
+			dir=down
+		}
+		place {
+			controls=ScreenshotActionLabel
+			start=Divider1
+			x=240
+			y=16
+			dir=down
+		}
+
+		place {
+			controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
+			start=ScreenshotActionLabel
+			dir=down
+			spacing=-6
+		}
+		place {
+			controls=ScreenshotLabel
+			start=Divider1
+			y=16
+			dir=down
+		}
+
+		place {
+			controls=ScreenshotHotKeySelector
+			start=ScreenshotLabel
+			y=4
+			width=200
+			height=24
+			dir=down
+		}
+
+		place {
+			controls=SetScreenshotFolderButton
+			start=ScreenshotHotKeySelector
+			y=16
+			width=200
+			height=28
+			dir=down
+		}
+		place {
+			controls="PingRateLabel"
+			start=SetScreenshotFolderButton
+			y=50
+			width=max
+			dir=down
+		}
+
+		place {
+			controls="PingRateCombo"
+			start=PingRateLabel
+			y=4
+			width=200
+			height=28
+			dir=down
+		}
+
+		place {
+			controls="PingRateInfo"
+			start="PingRateCombo"
+			y=8
+			width=max
+			margin-right=43
+			dir=down
+		}
+
+		place {
+			controls="ShowIngameFPSLabel"
+			start="PingRateInfo"
+			y=16
+			width=max
+			dir=down
+		}
+
+		place {
+			controls="ShowInGameFPSCombo"
+			start="ShowIngameFPSLabel"
+			y=8
+			width=200
+			height=28
+			dir=down
+		}
+
+		place {
+			controls="ShowIngameFPSContrastCheck"
+			start=ShowIngameFPSCombo
+			x=16
+			width=max
+			dir=right
+		}
+
+
+		place {
+			control="TitleLabel"
+			width=0
+			height=0
+		}
+	}
+}
